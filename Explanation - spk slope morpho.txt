@@ -1,0 +1,16 @@
+Developed by Sofia Falco and Vinícius Cota @ 27/09/2018
+LINNce - Laboratório Interdisciplinar de Neuroengenharia e Neurociências
+Programa de Pós-Graduação em Engenharia Elétrica
+Universidade Federal de São João del-Rei - Minas Gerais - Brasil
+
+Inputs:
+SpkClip = an average of spike clip, with 80 ms;
+AllSf = sampling frequency;
+AllGain = gain of the recording, as used in the acquisition.
+Outputs:
+SpkSlope = average slope, obtained by doing (SlopeUp + SlopeDown) / 2;
+SlopeUp = rising slope, obtained by numerical derivation;
+SlopeDown = dropping slope, obtained by numerical derivation;
+AmpUp = amplitude peak calculated based on the rising edge;
+AmpDown = amplitude peak calculated based on the dropping edge;
+AmpAvg = average amplitude.

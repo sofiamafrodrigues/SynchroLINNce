@@ -1,0 +1,15 @@
+Developed by Sofia Falco and Vinícius Cota @ 04/10/2018
+LINNce - Laboratório Interdisciplinar de Neuroengenharia e Neurociências
+Programa de Pós-Graduação em Engenharia Elétrica
+Universidade Federal de São João del-Rei - Minas Gerais - Brasil
+
+
+Inputs:
+SpkTimeStamps_ref = spike time stamps of the recording of a channel, A for example, used here for reference;
+SpkTimeStamps_comp = spike time stamps of the recording of a channel, B for example, used here for comparision;
+TimeWindow = time window chosen for coincidence analysis, in seconds;
+
+Outputs:
+CoincidenceRate = the coincidence rate calculated for spike coincidence, comparing channels A and B, in a temporal window chosen in TimeWindow;
+CoincidenceMaxRef = a mask created with the coincident times (positions in the vector of Time stamps) in the reference channel;
+CoincidenceMaxComp = a mask created with the coincident times (positions in the vector of Time stamps) in the comparision channel.
