@@ -1,0 +1,27 @@
+Help: how Spike Detection works
+
+Developed by Sofia Falco and Vinícius Cota @ 28/09/2018
+LINNce - Laboratório Interdisciplinar de Neuroengenharia e Neurociências
+Programa de Pós-Graduação em Engenharia Elétrica
+Universidade Federal de São João del-Rei - Minas Gerais - Brasil
+
+Inputs:
+RecordClip = recordin clip to be analyzed;
+AllSf = sampling frequency;
+AllGain = voltage gain used in acqusition;
+ThresholdMax = threshold of 0 to 1 for marking the spike, in relation to the maximum amplitude of a spike found in the window of 1 second (ex 0.6 (60%)); 
+DeltaTMin = time interval between one spike and another, to avoid marking the same spike 2 times, due to possible variations in morphology (ex 0.1 (100 ms));
+AmpCutMin = minimum amplitude expected for the spike (ex 0.225 mV); 
+
+Outputs:
+SpkTimeStamps = time stamps of the spikes;
+SpkMaxStamps = time stamps of the peaks of the spikes;
+SpkClips = patchs of the signal that correspond to each spike (80 ms);
+SpkNumber = number of spikes found on the analyzed recording;
+SpkFireRate = average firing rate of the spikes;
+AvgSpkMaxStamps = average of the max spike stamps;
+MaxSpkMaxStamps = maximum of the max spike stamps;
+MinSpkMaxStamps = minimum of the max spike stamps;
+AvgDeltaT = average of the temporal distance between the spikes;
+MaxDeltaT = maximum of the temporal distance between the spikes;
+MinDeltaT = minimum of the temporal distance between the spikes.
